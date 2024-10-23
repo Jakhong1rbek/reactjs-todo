@@ -1,0 +1,37 @@
+.filter {
+	height: 60px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	width: 100%;
+}
+.buttons {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 4px;
+}
+.buttons button {
+	background-color: #ebd03b;
+	height: 40px;
+	border: none;
+	outline: none;
+	/* background-color: transparent; */
+	/* border: 1px solid #ffd700; */
+	font-weight: bold;
+	color: #000;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	border-radius: 30px;
+}
+.buttons button:hover {
+	background-color: #7c6a05;
+	color: #fff;
+}
+.buttons button.active {
+	background-color: #7c6a05;
+	color: #fff;
+}
